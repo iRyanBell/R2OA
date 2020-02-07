@@ -2,7 +2,7 @@ import sys
 import random
 from bitstring import BitArray
 from utils.r2oa import encode, rule
-from pysnark.runtime import snark, PrivVal
+from pysnark.runtime import snark
 
 @snark
 def r2oa(a_uint, b_uint, size):
