@@ -10,7 +10,7 @@ def r2oa(a_uint, b_uint, size):
 	a = BitArray(uint=a_uint.value, length=size.value)
 	b = BitArray(uint=b_uint.value, length=size.value)
 	a_enc, b_enc = encode(a, b, rules, steps)
-	return encode(a, b, rules, steps)
+	return a_enc, b_enc
 
 a = BitArray(sys.argv[1].encode('utf-8'))
 b = BitArray([random.getrandbits(1) for x in a])
